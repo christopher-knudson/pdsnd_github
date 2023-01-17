@@ -25,35 +25,27 @@ def get_filters():
     
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
-      try:
-        city = input('Would you like to see data for Chicago, New York City, or Washington?\n').lower().strip()
-        if city not in CITY_DATA: 
-          raise ValueError
+      city = input('Would you like to see data for Chicago, New York City, or Washington?\n').lower().strip()
+      error = '\nThat was not a valid input.'
+      if city in CITY_DATA: 
         break
-      except ValueError:
-        print('\nThat was not a valid input. Please type the city exactly as it appears above.')
+      print(error)
 
     # TO DO: get user input for month (all, january, february, ... , june)
     print('\nNow, which month would you like to see data for?')
     while True:
-      try:
-        month = input('Enter the full name of the month (e.g. "January") or enter \"all.\"\n').lower().strip()
-        if month not in months and month.lower() != 'all':
-          raise ValueError
+      month = input('Enter the full name of the month (e.g. "January") or enter \"all.\"\n').lower().strip()
+      if month in months or month.lower() == 'all':
         break
-      except ValueError:
-        print('\nThat was not a valid input. Please spell out the entire month or enter \"all.\"')
+      print(error)
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     print('\nFinally, which day of the week would you like to see data for?')
     while True:
-      try:
-        day = input('Enter the full day of week (e.g. "Monday") or enter \"all.\"\n').lower().strip()
-        if day not in daysofweek and day != 'all':
-          raise ValueError
+      day = input('Enter the full day of week (e.g. "Monday") or enter \"all.\"\n').lower().strip()
+      if day in daysofweek or day == 'all':
         break
-      except ValueError:
-        print('\nThat was not a valid input. Please spell out the entire day of week or enter \"all.\"')
+      print(error)
     
     print('-'*40)
     return city, month, day
