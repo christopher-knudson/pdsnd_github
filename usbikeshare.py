@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+import datetime
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -102,7 +103,7 @@ def time_stats(df):
 
     # TO DO: display the most common month
     most_common_month = df['month'].mode()[0]
-    print(f"Most common month: {months[most_common_month-1].title()}") 
+    print(f"Most common month: {datetime.date(1900, most_common_month, 1).strftime('%B')}") 
 
     # TO DO: display the most common day of week
     most_common_day = df['day_of_week'].mode()[0]
