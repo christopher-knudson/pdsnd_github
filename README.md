@@ -7,11 +7,13 @@
 Christopher's Udacity GIT Project
 
 ### Description
-Describe what your project is about and what it does
+This project is about learning GIT
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
+usbikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+https://github.com/udacity/pdsnd_github
