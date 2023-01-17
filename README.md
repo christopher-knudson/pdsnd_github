@@ -10,11 +10,12 @@ Christopher's Udacity GIT Project
 This project is about learning GIT
 
 ### Files used
-chicago.csv
-new_york_city.csv
-washington.csv
-usbikeshare.py
+chicago.csv  
+new_york_city.csv  
+washington.csv  
+usbikeshare.py  
 
 ### Credits
-https://github.com/udacity/pdsnd_github
-Kanye West for the sick beats
+https://github.com/udacity/pdsnd_github  
+Kanye West for the sick beats  
+Mom for birthing me  
