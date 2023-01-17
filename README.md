@@ -17,3 +17,4 @@ usbikeshare.py
 
 ### Credits
 https://github.com/udacity/pdsnd_github
+Kanye West for the sick beats
